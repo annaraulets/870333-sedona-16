@@ -6,106 +6,129 @@
   </head>
   <body>
 
- 	<header>
- 		<nav>
- 			<button>Открыть меню</button>
-	 		<a href="#">
-	 			<img src="http://placehold.it/150x100">
-	 		</a>
-	 		<ul>
-	 			<li><a>Главная</a></li>
-	 			<li><a href="#">Фото и видео</a></li>
-	 			<li><a href="#">Форма отзыва</a></li>
-	 			<li><a href="#">HTML academy</a></li>
-	 		</ul>
-	 	</nav>
+  <header>
+    <nav class="main-menu">
+      <button>Открыть меню</button>
+      <ul class="menu">
+        <li class="menu-item">
+          <a>Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="gallery.html">Фото и видео</a>
+        </li>
+        <li class="menu-item">
+          <a href="forms.html">Форма отзыва</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">HTML academy</a>
+        </li>
+      </ul>
+      <a class="logo" href="#">
+        <img src="#">
+      </a>
+    </nav>
+  </header>
 
-	 	<main>
-	 		<section>
-		 		<img src="http://placehold.it/150x100">
-				<h1 class="vissually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ,
-				зАСЛУЖИвающий большего!</h1>
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-	 		</section>
 
-	 		<section class="list">
-	 			<ul>
-	 				<li>
-	 					<h2>НАСТОЯЩИЙ ГОРОДОК</h2>
-	 					<span>— №1 —</span>
-	 					<p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-	 					<img src="#">
-	 					<ul>
-	 						<li>
-	 							<img src="#">
-	 							<h3>ЖИЛЬЕ</h3>
-	 							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-	 						</li>
-	 						<li>
-	 							<img src="#">
-	 							<h3>ЕДА</h3>
-	 							<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-	 						</li>
-	 						<li>
-	 							<img src="#">
-	 							<h3>СУВЕНИРЫ</h3>
-	 							<p>Не только китайского, но и местного производства!</p>
-	 						</li>
-	 					</ul>
-	 				</li>
-	 				<li>
-	 					<h2>ТАМ ЕСТЬ Мост дьявола</h2>
-	 					<span>— №2 —</span>
-	 					<p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-	 					<img src="#">
-	 				</li>
-	 				<li>
-	 					<h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-	 					<span>— №3 —</span>
-	 					<p>ВСЕ интересные места находятся очень близко</p>
-	 				</li>
-	 				<li>
-	 					<h2>КРАСИВАЯ ДОРОГА</h2>
-	 					<span>— №4 —</span>
-	 					<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-	 				</li>
-	 				<li>
-	 					<h2>МАЛО ТУРИСТОВ</h2>
-	 					<span>— №5 —</span>
-	 					<p>Большинство едет в гранд каньон и толпится там</p>
-	 				</li>
-	 			</ul>
-	 		</section>
+    <main>
+      <div class="main-banner">
+          <img src="http://placehold.it/150x100">
+      </div>
+      <section class="about">
+        <h1 class="about__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
+        заслуживающий большего!</h1>
+        <p class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
 
-	 		<section class="search_hotel">
-	 			<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-	 			<p>Укажите предполагаемые даты поездки, 
-	 			и мы покажем вам лучшие предложения гостиниц в седоне</p>
-	 			<button>НАЙТИ гостиницу</button>	
-	 		</section>
+      <section class="main-list">
+        <ul class="list">
+          <li class="list__item list-item--large">
+            <div class="list__wrap">
+              <h2 class="list__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+              <span class="list__number">— №1 —</span>
+              <p class="list__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="list__img">
+              <img src="#">
+            </div>
+          </li>
 
-	 		<footer>
-	 			<div>
-	 				<p>#visitSEDONA</p>
-	 			</div>
+          <li class="list__item">
+            <img class="list__icon" src="#">
+            <h3 class="list__title">ЖИЛЬЕ</h3>
+            <p class="list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
 
-	 			<div>
-	 				<ul>
-	 					<li><a href="#"></a>Twitter</li>
-			 			<li><a href="#"></a>FaceBook</li>
-			 			<li><a href="#"></a>YouTube</li>
-	 				</ul>
-	 			</div>
+          <li class="list__item">
+            <img class="list__icon" src="#">
+            <h3 class="list__title">ЕДА</h3>
+            <p class="list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
 
-	 			<div>
-	 				<p>Разработано</p>
-	 				<img src="#">
-	 			</div>
-	 		</footer>
+          <li class="list__item">
+            <img class="list__icon" src="#">
+            <h3 class="list__title">СУВЕНИРЫ</h3>
+            <p class="list__text">Не только китайского, но и местного производства!</p>
+          </li>
 
-	 	</main>
+          <li class="list__item">
+            <div class="list__wrap">
+              <h2 class="list__title">Там есть Мост дьявола</h2>
+              <span class="list__number">— №2 —</span>
+              <p class="list__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="list__img">
+              <img src="#">
+            </div>
+          </li>
 
- 	</header>
+          <li class="list__item">
+            <h2 class="list-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <span class="list_number">— №3 —</span>
+            <p class="list__text">ВСЕ интересные места находятся очень близко</p>
+          </li>
+
+          <li class="list__item">
+            <h2 class="list__title">КРАСИВАЯ ДОРОГА</h2>
+            <span class="list__number">— №4 —</span>
+            <p class="list__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+
+          <li class="list__item">
+            <h2 class="list__title">МАЛО ТУРИСТОВ</h2>
+            <span class="list__number">— №5 —</span>
+            <p class="list__text">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search">
+        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p>Укажите предполагаемые даты поездки,
+        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button>Найти гостиницу</button>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__item">
+          <p>#visitSEDONA</p>
+        </div>
+
+        <ul class="footer__item">
+          <li><a href="#"></a>Twitter</li>
+          <li><a href="#"></a>FaceBook</li>
+          <li><a href="#"></a>YouTube</li>
+        </ul>
+
+        <div class="footer__item">
+          <p>Разработано</p>
+          <img src="#">
+        </div>
+      </footer>
+
+    </main>
+
+  </header>
 
 
   </body>
