@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -24,15 +26,15 @@
         </li>
       </ul>
       <a class="logo" href="#">
-        <img src="#">
+        <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="логотип седоны мобильный">
       </a>
     </nav>
   </header>
 
 
     <main>
-      <div class="main-banner">
-          <img src="http://placehold.it/150x100">
+      <div class="main__banner">
+          <img src="img/text-sedona-index.svg" width="281" height="214" alt="логотип седоны текстовый">
       </div>
       <section class="about">
         <h1 class="about__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
@@ -42,49 +44,49 @@
 
       <section class="main-list">
         <ul class="list">
-          <li class="list__item list-item--large">
+          <li class="list__item list__item--large">
             <div class="list__wrap">
               <h2 class="list__title">НАСТОЯЩИЙ ГОРОДОК</h2>
               <span class="list__number">— №1 —</span>
               <p class="list__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="list__img">
-              <img src="#">
+              <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Главный город Седона">
             </div>
           </li>
 
-          <li class="list__item">
-            <img class="list__icon" src="#">
-            <h3 class="list__title">ЖИЛЬЕ</h3>
-            <p class="list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <li class="list__item list__item--second">
+            <img class="list__icon" src="img/icon-house.svg" width="35" height="35" alt="логотип домик">
+            <h3 class="list__title list__title--second">ЖИЛЬЕ</h3>
+            <p class="list__text list__text--second">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
 
-          <li class="list__item">
-            <img class="list__icon" src="#">
-            <h3 class="list__title">ЕДА</h3>
-            <p class="list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="list__item list__item--second">
+            <img class="list__icon" src="img/icon-gift.svg" width="35" height="35" alt="Логотип подарок">
+            <h3 class="list__title list__title--second">ЕДА</h3>
+            <p class="list__text list__text--second">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
-          <li class="list__item">
-            <img class="list__icon" src="#">
-            <h3 class="list__title">СУВЕНИРЫ</h3>
-            <p class="list__text">Не только китайского, но и местного производства!</p>
+          <li class="list__item list__item--second">
+            <img class="list__icon" src="img/icon-burger.svg" width="35" height="35" alt="Логотип бургер">
+            <h3 class="list__title list__title--second">СУВЕНИРЫ</h3>
+            <p class="list__text list__text--second">Не только китайского, но и местного производства!</p>
           </li>
 
-          <li class="list__item">
+          <li class="list__item list__item--large">
             <div class="list__wrap">
               <h2 class="list__title">Там есть Мост дьявола</h2>
               <span class="list__number">— №2 —</span>
               <p class="list__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="list__img">
-              <img src="#">
+              <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
             </div>
           </li>
 
           <li class="list__item">
-            <h2 class="list-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <span class="list_number">— №3 —</span>
+            <h2 class="list__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <span class="list__number">— №3 —</span>
             <p class="list__text">ВСЕ интересные места находятся очень близко</p>
           </li>
 
@@ -102,27 +104,39 @@
         </ul>
       </section>
 
-      <section class="search">
+      <!-- <section class="search">
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>Найти гостиницу</button>
-      </section>
+      </section> -->
 
       <footer class="footer">
         <div class="footer__item">
-          <p>#visitSEDONA</p>
+          <p class="item__tag">#visitSEDONA</p>
         </div>
 
-        <ul class="footer__item">
-          <li><a href="#"></a>Twitter</li>
-          <li><a href="#"></a>FaceBook</li>
-          <li><a href="#"></a>YouTube</li>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#">
+              <img src="img/icon-twitter.svg" width="18" height="14px" alt="логотип твиттер">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <img src="img/icon-facebook.svg" width="10" height="14px" alt="логотип фейсбук">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <img src="img/icon-youtube.svg" width="20" height="14px" alt="логотип ютуб">
+            </a>
+          </li>
         </ul>
 
         <div class="footer__item">
           <p>Разработано</p>
-          <img src="#">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип htmlAcademy">
         </div>
       </footer>
 
