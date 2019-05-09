@@ -4,9 +4,13 @@
 
 .main-menu {
   background-color: #ffffff;
+  // padding: 0;
+  // margin: 0 20px;
 }
 
 .menu {
+  padding: 0;
+  margin: 0;
   background-color: #81b3d2;
 }
 
@@ -15,9 +19,53 @@
   list-style: none;
   font-size: @font-large;
   font-weight: bold;
+  padding: 18px 0;
+  border-bottom: 1px solid #acb1b8;
+  text-align: center;
 
   a {
     color: #ffffff;
     text-decoration: none;
   }
 }
+
+.logo {
+  height: 55px;
+  padding-left: 100px;
+}
+
+
+@media (min-width: @tablet) {
+  .main-menu {
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .menu-item {
+    width: 20%;
+    font-size: 14px;
+    border: none;
+
+    a {
+      color: #000000;
+    }
+  }
+
+  .menu-item:nth-child(3n) {
+    margin-left: 20%;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+}
+
