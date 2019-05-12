@@ -5,8 +5,8 @@
 
 .footer__list {
   display: flex;
-  margin: 35px 0 40px 80px;
   padding: 0;
+  margin: 40px 0 45px 80px;
 }
 
 .item__tag {
@@ -20,10 +20,13 @@
 
 .footer__item {
   list-style: none;
-  margin: 0;
+  margin-right: 5px;
 
   a {
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
     background-color: #81b3d2;
   }
 }
@@ -45,12 +48,15 @@
 }
 
 @media (min-width: @tablet) {
-  .footer__wrap {
-    margin: 0;
-    padding: 0;
+  .footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    width: 30%;
+    align-items: center;
   }
 }
+
+@media (min-width: @desktop) {
+  .footer  {
+    justify-content: space-around;
+  }
+}
+
