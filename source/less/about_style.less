@@ -4,12 +4,6 @@
   padding: 40px 25px 30px 25px;
 }
 
-@line-large: 40px;
-@line-middle: 26px;
-@line-small: 21px;
-
-@font-middle: 14px;
-
 .about__title {
   color: #000000;
   text-transform: uppercase;
@@ -26,4 +20,19 @@
   line-height: @line-middle;
   text-align: center;
   margin-bottom: 35px;
+}
+
+.about__gallery {
+  border-bottom: 1px solid #cfd6d9;
+}
+
+
+@media (min-width: @desktop) {
+  .about {
+    padding: 50px 355px 55px 355px;
+  }
+
+  .about__title {
+    font-size: 21px;
+  }
 }
