@@ -1,0 +1,43 @@
+.promo {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+
+  p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  button {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    color: #ffffff;
+    cursor: pointer;
+
+    padding: 15px 40px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .promo {
+    padding: 30px 160px;
+
+    button {
+      margin-left: -10%;
+      width: 455px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    padding: 50px 370px;
+
+    button {
+      margin-left: 0;
+    }
+  }
+}

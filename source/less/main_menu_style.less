@@ -1,11 +1,15 @@
-// colors
-
-@font-large: 18px;
-
 .main-menu {
   background-color: #ffffff;
-  // padding: 0;
-  // margin: 0 20px;
+  position: relative;
+  padding-bottom: 56px;
+}
+
+.main-menu__toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
 }
 
 .menu {
@@ -20,7 +24,8 @@
   font-size: @font-large;
   font-weight: bold;
   padding: 18px 0;
-  border-bottom: 1px solid #acb1b8;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #6c7a86;
   text-align: center;
 
   a {
@@ -29,16 +34,25 @@
   }
 }
 
+
 .logo {
+  position: absolute;
   display: table;
   margin: 0 auto;
   height: 55px;
-  // padding-left: 100px;
+  left: 35%;
+  top: 230px;
+  z-index: 2;
 }
 
 @media (min-width: @tablet) {
   .main-menu {
     position: relative;
+    padding: 0;
+  }
+
+  .main-menu__toggle {
+    display: none;
   }
 
   .menu {

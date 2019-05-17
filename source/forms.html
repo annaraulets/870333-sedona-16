@@ -11,7 +11,9 @@
 
   <header class="container">
     <nav class="main-menu">
-      <button class="visually-hidden">Открыть меню</button>
+      <button class="main-menu__toggle">
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/></svg>
+      <span class="visually-hidden">Открыть меню</span></button>
       <ul class="menu">
         <li class="menu-item">
           <a href="index.html">Главная</a>
@@ -26,48 +28,136 @@
           <a href="#">HTML academy</a>
         </li>
       </ul>
-      <a class="logo" href="#">
-        <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="логотип седоны мобильный">
-      </a>
+        <a class="logo" href="#">
+          <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="логотип седоны мобильный">
+        </a>
     </nav>
   </header>
 
   <main class="container">
     <div class="main__banner main__banner-gallery">
       <img src="img/text-sedona.svg" width="229" height="39" alt="логотип седоны галлерея">
+      <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
     </div>
+    <section class="feedback">
+      <h2>Оставьте свой отзыв</h2>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+
+
+    <section class="forms-container">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="forms__box">
+          <legend class="forms__title">Представьтесь:</legend>
+          <div class="forms__wrapper">
+            <label class="forms__text" for="name-field">Имя*:</label>
+            <input type="text" name="user-name" id="name-field">
+          </div>
+
+          <div class="forms__wrapper">
+            <label class="forms__text" for="surname-field">Фамилия*:</label>
+            <input type="text" name="user-surname" id="surname-field">
+          </div>
+
+          <div>
+            <label class="forms__text" for="fathername-field">Отчество:</label>
+            <input type="text" name="user-fathername" id="fathername-field">
+          </div>
+        </fieldset>
+
+        <fieldset class="forms__box">
+          <legend class="forms__title">Контактная информация:</legend>
+          <div class="forms__wrapper">
+            <label class="forms__text" for="number-field">Контактный телефон*:</label>
+            <input type="text" name="number" id="number-field">
+          </div>
+
+          <div>
+            <label class="forms__text" for="email-field">Электронная почта*:</label>
+            <input type="email" name="email" id="email-field">
+          </div>
+        </fieldset>
+
+        <fieldset class="forms__box">
+          <legend class="forms__title">Ваше Общее впечатление:</legend>
+          <div class="forms__wrapper">
+            <input type="radio" name="positive" id="positive-field" checked>
+            <label class="forms__text--bold" for="positive-field">Скорее положительное</label>
+          </div>
+
+          <div class="forms__wrapper">
+            <input type="radio" name="negative" id="negative-field">
+            <label class="forms__text--bold" for="negative-field">Скорее отрицательное</label>
+          </div>
+
+          <div>
+            <input type="radio" name="dont-know" id="dontknow-field">
+            <label class="forms__text--bold" for="dontknow-field">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="forms__box">
+          <legend class="forms__title">Посещенные достопримечательности:</legend>
+          <div class="forms__wrapper">
+            <input type="checkbox" name="bridge" id="bridge-field" checked>
+            <label class="forms__text--bold" for="bridge-field">Мост Дьявола</label>
+          </div>
+
+          <div class="forms__wrapper">
+            <input type="checkbox" name="mount" id="mount-field" checked>
+            <label class="forms__text--bold" for="mount-field">Гора-Колокол</label>
+          </div>
+
+          <div class="forms__wrapper">
+            <input type="checkbox" name="park" id="park-field" checked>
+            <label class="forms__text--bold" for="park-field">Слайд-парк</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="rock" id="rock-field">
+            <label class="forms__text--bold" for="rock-field">Красные скалы</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="forms__box--last">
+          <legend class="forms__title">Опишите свои эмоции:</legend>
+          <textarea class="forms__area" placeholder="Опишите подробно все свои восторги "></textarea>
+        </fieldset>
+        <button class="forms__button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
   </main>
 
-      <footer class="container footer">
-        <div class="footer__wrap">
-          <p class="item__tag">#visitSEDONA</p>
-        </div>
+  <footer class="container footer">
+    <div class="footer__wrap">
+      <p class="item__tag">#visitSEDONA</p>
+    </div>
 
-        <div class="footer__wrap">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#">
-                <img src="img/icon-twitter.svg" width="18" height="14px" alt="логотип твиттер">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="#">
-                <img src="img/icon-facebook.svg" width="10" height="14px" alt="логотип фейсбук">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="#">
-                <img src="img/icon-youtube.svg" width="20" height="14px" alt="логотип ютуб">
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="footer__wrap">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#">
+            <img src="img/icon-twitter.svg" width="18" height="14px" alt="логотип твиттер">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <img src="img/icon-facebook.svg" width="10" height="14px" alt="логотип фейсбук">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <img src="img/icon-youtube.svg" width="20" height="14px" alt="логотип ютуб">
+          </a>
+        </li>
+      </ul>
+    </div>
 
-        <div class="footer__wrap footer__item--last">
-          <p>Разработано</p>
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип htmlAcademy">
-        </div>
-      </footer>
+    <div class="footer__wrap footer__item--last">
+      <p>Разработано</p>
+      <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип htmlAcademy">
+    </div>
+  </footer>
 
 </body>
 
