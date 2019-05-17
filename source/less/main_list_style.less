@@ -3,6 +3,7 @@
 }
 
 .list {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -27,7 +28,13 @@
 
 .list__item--second {
   background-color: #ffffff;
-  padding: 40px 40px 40px 70px;
+  padding: 20px 40px 20px 70px;
+  box-sizing: border-box;
+}
+
+.list__icon {
+  position: absolute;
+  left: 22px;
 }
 
 .list__wrap {
@@ -58,6 +65,10 @@
   text-align: left;
 }
 
+.list__item--small {
+  border-bottom: 1px solid #6c7a86;
+}
+
 @media (min-width: @tablet) {
   .list {
     display: flex;
@@ -66,6 +77,23 @@
 
   .list__item {
     width: 100%;
+  }
+
+  .list__title {
+    text-align: center;
+  }
+
+  .list__text {
+    text-align: center;
+  }
+
+  .list__title--second {
+    text-align: center;
+  }
+
+  .list__text--second {
+    text-align: center;
+    margin: 0;
   }
 
   .list__item--large {
@@ -93,23 +121,33 @@
   }
 
   .list__item--second {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
     width: 33.333333%;
     box-sizing: border-box;
+    padding: 150px 40px 65px 50px;
+
+    text-align: center;
+  }
+
+  .list__icon {
+    left: 35%;
+    top: 60px;
+    width: 75px;
+    height: 75px;
   }
 }
 
 @media (min-width: @desktop) {
   .list__item--second {
-    padding: 60px 20px 85px 70px;
-    text-align: center;
+    justify-content: space-between;
+    // padding: 60px 20px 85px 70px;
   }
 
-  .list__title {
-    text-align: center;
-  }
-
-  .list__text {
-    text-align: center;
+  .list__icon {
+    left: 40%;
   }
 
   .list__item--small {

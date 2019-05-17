@@ -1,7 +1,8 @@
 .about {
+  position: relative;
   background-color: #ffffff;
   margin: 0;
-  padding: 40px 25px 30px 25px;
+  padding: 40px 25px 10px 25px;
 }
 
 .about__title {
@@ -19,11 +20,23 @@
   font-size: @font-middle;
   line-height: @line-middle;
   text-align: center;
-  margin-bottom: 35px;
+}
+
+.triagle-two {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  padding: 0;
 }
 
 .about__gallery {
   border-bottom: 1px solid #cfd6d9;
+}
+
+@media (min-width: @tablet) {
+  .triagle-two {
+    display: none;
+  }
 }
 
 
