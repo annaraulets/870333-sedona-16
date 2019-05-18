@@ -25,25 +25,42 @@
 
 @media (min-width: @tablet) {
   .main-banner {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: 768px 518px;
+    // // background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-size: 768px 518px;
 
     img {
       width: 460px;
       height: 350px;
-      padding: 75px 154px 90px 120px;
+      padding: 75px 154px 90px 154px;
+    }
+
+    @media
+    (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
     }
 
     .triagle {
       display: none;
     }
   }
+
+  .main-banner-gallery {
+    background-position: center 100%;
+    height: 300px;
+
+    img {
+      width: 460px;
+      height: 80px;
+      padding: 90px 154px 90px 120px;
+    }
+  }
 }
 
 @media (min-width: @desktop) {
   .main-banner {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: 1200px 518px;
+    background-size: cover;
 
     img {
       width: 460px;
@@ -51,8 +68,19 @@
       padding: 75px 370px 90px 370px;
     }
 
+    @media
+    (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
     .triagle {
       display: none;
     }
+  }
+
+  .main-banner-gallery img {
+    height: 80px;
+    padding: 102px 370px 120px 370px;
   }
 }
