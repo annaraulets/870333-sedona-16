@@ -11,7 +11,9 @@
 
   <header class="container">
     <nav class="main-menu">
-      <button class="visually-hidden">Открыть меню</button>
+      <button class="main-menu__toggle">
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/></svg>
+      <span class="visually-hidden">Открыть меню</span></button>
       <ul class="menu">
         <li class="menu-item">
           <a>Главная</a>
@@ -34,13 +36,15 @@
 
 
     <main class="container">
-      <div class="main__banner">
+      <div class="main-banner">
           <img src="img/text-sedona-index.svg" width="281" height="214" alt="логотип седоны текстовый">
+          <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
       </div>
       <section class="about">
         <h1 class="about__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
         заслуживающий большего!</h1>
         <p class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <img class="triagle-two" src="img/bg-triangle.svg" width="320" height="37" alt="декоративный элемент">
       </section>
 
       <section class="main-list">
@@ -63,13 +67,13 @@
           </li>
 
           <li class="list__item list__item--second">
-            <img class="list__icon" src="img/icon-gift.svg" width="35" height="35" alt="Логотип подарок">
+            <img class="list__icon" src="img/icon-burger.svg" width="35" height="35" alt="Логотип бургер">
             <h3 class="list__title list__title--second">ЕДА</h3>
             <p class="list__text list__text--second">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
           <li class="list__item list__item--second">
-            <img class="list__icon" src="img/icon-burger.svg" width="35" height="35" alt="Логотип бургер">
+            <img class="list__icon" src="img/icon-gift.svg" width="35" height="35" alt="Логотип подарок">
             <h3 class="list__title list__title--second">СУВЕНИРЫ</h3>
             <p class="list__text list__text--second">Не только китайского, но и местного производства!</p>
           </li>
@@ -105,48 +109,43 @@
         </ul>
       </section>
 
-      <!-- <section class="search">
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>Укажите предполагаемые даты поездки,
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <section class="promo">
+        <h2>Заинтерeсовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>Найти гостиницу</button>
-      </section> -->
-
-      <footer class="container footer">
-        <div class="footer__wrap">
-          <p class="item__tag">#visitSEDONA</p>
-        </div>
-
-        <div class="footer__wrap">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#">
-                <img src="img/icon-twitter.svg" width="18" height="14px" alt="логотип твиттер">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="#">
-                <img src="img/icon-facebook.svg" width="10" height="14px" alt="логотип фейсбук">
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="#">
-                <img src="img/icon-youtube.svg" width="20" height="14px" alt="логотип ютуб">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__wrap footer__item--last">
-          <p>Разработано</p>
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип htmlAcademy">
-        </div>
-      </footer>
-
+      </section>
     </main>
 
-  </header>
 
+    <footer class="container footer">
+      <div class="footer__wrap">
+        <p class="footer__tag">#visitSEDONA</p>
+      </div>
 
+      <div class="footer__wrap">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#">
+              <img src="img/icon-twitter.svg" width="18" height="14" alt="логотип твиттер">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <img src="img/icon-facebook.svg" width="10" height="14" alt="логотип фейсбук">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <img src="img/icon-youtube.svg" width="20" height="14" alt="логотип ютуб">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__wrap footer__wrap--last">
+        <p>Разработано</p>
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип htmlAcademy">
+      </div>
+    </footer>
   </body>
 </html>
