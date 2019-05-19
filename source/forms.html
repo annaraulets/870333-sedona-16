@@ -19,18 +19,22 @@
           <a href="index.html">Главная</a>
         </li>
         <li class="menu-item">
-          <a>Фото и видео</a>
+          <a href="gallery.html">Фото и видео</a>
         </li>
         <li class="menu-item">
-          <a href="forms.html">Форма отзыва</a>
+          <a>Форма отзыва</a>
         </li>
         <li class="menu-item">
           <a href="#">HTML academy</a>
         </li>
       </ul>
-        <a class="logo" href="#">
-          <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="логотип седоны мобильный">
-        </a>
+        <a class="main-menu__logo" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-menu__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип седоны мобильный">
+        </picture>
+      </a>
     </nav>
   </header>
 
