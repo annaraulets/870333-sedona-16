@@ -53,74 +53,82 @@
       <form class="forms" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="forms__box">
           <legend class="forms__title">Представьтесь:</legend>
-          <div class="forms-wrapper">
-            <label class="forms__text" for="name-field">Имя*:</label>
-            <input type="text" name="user-name" id="name-field">
-          </div>
+          <ul class="forms__list">
+            <li class="forms__item">
+              <label class="forms__text" for="name-field">Имя*:</label>
+              <input type="text" name="user-name" id="name-field" placeholder="Петр">
+            </li>
 
-          <div class="forms-wrapper">
-            <label class="forms__text" for="surname-field">Фамилия*:</label>
-            <input type="text" name="user-surname" id="surname-field">
-          </div>
+            <li class="forms__item">
+              <label class="forms__text" for="surname-field">Фамилия*:</label>
+              <input type="text" name="user-surname" id="surname-field" placeholder="Иванов">
+            </li>
 
-          <div>
-            <label class="forms__text" for="fathername-field">Отчество:</label>
-            <input type="text" name="user-fathername" id="fathername-field">
-          </div>
+            <li class="forms__item">
+              <label class="forms__text" for="fathername-field">Отчество:</label>
+              <input type="text" name="user-fathername" id="fathername-field" placeholder="Александрович">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="forms__box">
           <legend class="forms__title">Контактная информация:</legend>
-          <div class="forms-wrapper">
-            <label class="forms__text" for="number-field">Контактный телефон*:</label>
-            <input type="text" name="number" id="number-field">
-          </div>
+          <ul class="forms__list">
+            <li class="forms__item">
+              <label class="forms__text" for="number-field">Контактный телефон*:</label>
+              <input type="text" name="number" id="number-field" placeholder="Введите телефон">
+            </li>
 
-          <div>
-            <label class="forms__text" for="email-field">Электронная почта*:</label>
-            <input type="email" name="email" id="email-field">
-          </div>
+            <li class="forms__item">
+              <label class="forms__text" for="email-field">Электронная почта*:</label>
+              <input type="email" name="email" id="email-field"  placeholder="Введите e-mail">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="forms__box">
           <legend class="forms__title">Ваше Общее впечатление:</legend>
-          <div class="forms-wrapper">
-            <input type="radio" name="positive" id="positive-field" checked>
-            <label class="forms__text forms__text--bold" for="positive-field">Скорее положительное</label>
-          </div>
+          <ul class="forms__list">
+            <li class="forms__item">
+              <input class="visually-hidden" type="radio" name="positive" id="positive-field" checked>
+              <label class="forms__text forms__text--bold" for="positive-field">Скорее положительное</label>
+            </li>
 
-          <div class="forms-wrapper">
-            <input type="radio" name="negative" id="negative-field">
-            <label class="forms__text forms__text--bold" for="negative-field">Скорее отрицательное</label>
-          </div>
+            <li class="forms__item">
+              <input class="visually-hidden" type="radio" name="negative" id="negative-field">
+              <label class="forms__text forms__text--bold" for="negative-field">Скорее отрицательное</label>
+            </li>
 
-          <div>
-            <input type="radio" name="dont-know" id="dontknow-field">
-            <label class="forms__text forms__text--bold" for="dontknow-field">Затрудняюсь ответить</label>
-          </div>
+            <li class="forms__item">
+              <input class="visually-hidden" type="radio" name="dont-know" id="dontknow-field">
+              <label class="forms__text forms__text--bold" for="dontknow-field">Затрудняюсь ответить</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="forms__box">
           <legend class="forms__title">Посещенные достопримечательности:</legend>
-          <div class="forms-wrapper">
-            <input type="checkbox" name="bridge" id="bridge-field" checked>
-            <label class="forms__text forms__text--bold" for="bridge-field">Мост Дьявола</label>
-          </div>
+          <ul class="forms__list">
+            <li class="forms__item">
+              <input class="visually-hidden" type="checkbox" name="bridge" id="bridge-field" checked>
+              <label class="forms__text forms__text--bold" for="bridge-field">Мост Дьявола</label>
+            </li>
 
-          <div class="forms-wrapper">
-            <input type="checkbox" name="mount" id="mount-field" checked>
-            <label class="forms__text forms__text--bold" for="mount-field">Гора-Колокол</label>
-          </div>
+            <li class="forms__item">
+              <input class="visually-hidden" type="checkbox" name="mount" id="mount-field" checked>
+              <label class="forms__text forms__text--bold" for="mount-field">Гора-Колокол</label>
+            </li>
 
-          <div class="forms-wrapper">
-            <input type="checkbox" name="park" id="park-field" checked>
-            <label class="forms__text forms__text--bold" for="park-field">Слайд-парк</label>
-          </div>
+            <li class="forms__item">
+              <input class="visually-hidden" type="checkbox" name="park" id="park-field" checked>
+              <label class="forms__text forms__text--bold" for="park-field">Слайд-парк</label>
+            </li>
 
-          <div>
-            <input type="checkbox" name="rock" id="rock-field">
-            <label class="forms__text forms__text--bold" for="rock-field">Красные скалы</label>
-          </div>
+            <li class="forms__item">
+              <input class="visually-hidden" type="checkbox" name="rock" id="rock-field">
+              <label class="forms__text forms__text--bold" for="rock-field">Красные скалы</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="forms__box forms__box--last">
