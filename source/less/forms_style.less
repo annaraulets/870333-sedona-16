@@ -1,43 +1,83 @@
 .forms-container {
   background-color: #ffffff;
-  padding: 25px 20px;
 }
 
 .forms__box {
   border: none;
   border-bottom: 1px solid #333333;
-  padding: 25px 0 25px 0;
-  margin-bottom: 25px;
+  padding: 25px 20px;
+
+  textarea {
+    margin-bottom: 50px;
+  }
 }
 
-.forms__box--last {
-  border: none;
-  padding: 25px 0 25px 0;
-  margin-bottom: 30px;
+.forms__box:last-child {
+  border-bottom: none;
 }
+
 
 .forms__list{
   list-style: none;
   margin: 0;
   padding: 0;
+  display: block;
+
+  input {
+    width: 240px;
+    height: 58px;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &--space {
+    margin-left: 78px;
+  }
 }
 
 .forms__item {
   margin-bottom: 20px;
+
+  &--stretch {
+    display: flex;
+
+    input {
+      width: 150px;
+      flex-grow: 1;
+    }
+  }
+
+  &--bigspace {
+    margin-bottom: 50px;
+  }
 }
 
 .forms__title {
   text-align: center;
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
 
-  margin-bottom: 20px;
+  margin: 0 0 25px 0;
 }
 
 .forms__text {
-  display: inline-block;
   font-size: 14px;
   color: #333333;
+  margin-right: 15px;
+
+  &--first {
+    margin-top: 20px;
+  }
+
+  &--block {
+    display: block;
+    margin-bottom: 15px;
+  }
 }
 
 .forms__text--bold {
