@@ -88,27 +88,27 @@
 
         <div class="forms__box">
           <h2 class="forms__title">Ваше Общее впечатление:</h2>
-          <ul class="forms__list forms__list--space">
+          <ul class="forms__list">
             <li class="forms__item forms__item--bigspace">
               <input class="visually-hidden" type="radio" name="positive" id="positive-field" checked>
-              <label class="forms__text forms__text--bold" for="positive-field">Скорее положительное</label>
+              <label class="forms__text forms__text--bold forms__text--radio" for="positive-field">Скорее положительное</label>
             </li>
 
             <li class="forms__item forms__item--bigspace">
               <input class="visually-hidden" type="radio" name="negative" id="negative-field">
-              <label class="forms__text forms__text--bold" for="negative-field">Скорее отрицательное</label>
+              <label class="forms__text forms__text--bold forms__text--radio" for="negative-field">Скорее отрицательное</label>
             </li>
 
             <li class="forms__item forms__item--bigspace">
               <input class="visually-hidden" type="radio" name="dont-know" id="dontknow-field">
-              <label class="forms__text forms__text--bold" for="dontknow-field">Затрудняюсь ответить</label>
+              <label class="forms__text forms__text--bold forms__text--radio" for="dontknow-field">Затрудняюсь ответить</label>
             </li>
           </ul>
         </div>
 
         <div class="forms__box">
           <h2 class="forms__title">Посещенные достопримечательности:</h2>
-          <ul class="forms__list forms__list--space">
+          <ul class="forms__list">
             <li class="forms__item forms__item--bigspace">
               <input class="visually-hidden" type="checkbox" name="bridge" id="bridge-field" checked>
               <label class="forms__text forms__text--bold" for="bridge-field">Мост Дьявола</label>
@@ -170,6 +170,24 @@
       <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип htmlAcademy">
     </div>
   </footer>
+
+  <div class="container modal-container disable">
+    <section class="modal__error">
+      <h2>ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button>OK</button>
+    </section>
+
+    <section class="modal__review disable">
+      <h2>Ваш отзыв отправлен!</h2>
+      <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="modal__wrap">
+        <button>ЗАКРЫТЬ ОКНО</button>
+      </div>
+    </section>
+  </div>
 
 </body>
 

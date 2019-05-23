@@ -33,10 +33,6 @@
     font-size: 18px;
     font-weight: bold;
   }
-
-  &--space {
-    margin-left: 78px;
-  }
 }
 
 .forms__item {
@@ -81,12 +77,49 @@
 }
 
 .forms__text--bold {
+  position: relative;
   display: block;
+  padding-left: 78px;
+  padding-top: 10px;
   text-transform: none;
   font-size: 18px;
   font-weight: bold;
   color: #000000;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
 }
+
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  width: 24px;
+  height: 16px;
+  background-image: url(../img/icon-tick.svg);
+  background-size: 24px 16px;
+  background-repeat: no-repeat;
+}
+
+
+.forms__text--radio::before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
 
 .forms__area {
   padding: 20px 20px;

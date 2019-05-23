@@ -39,7 +39,7 @@ img {
   padding: 0 20px;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -53,6 +53,10 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.disable {
+  display: none;
 }
 
 @media (min-width: @tablet) {
