@@ -6,17 +6,23 @@
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .list__item {
   background-color: #cfd6d9;
   margin: 0;
-  padding: 33px 40px;
+  padding: 14px 35px;
   list-style: none;
 }
 
 .list__img {
   width: 100%;
+  background-color: #ffffff;
+
+  &--second {
+  background-color:  #cfd6d9;
+  }
 }
 
 
@@ -28,8 +34,18 @@
 
 .list__item--second {
   background-color: #ffffff;
-  padding: 20px 40px 20px 70px;
+  padding: 33px 40px 8px 70px;
   box-sizing: border-box;
+}
+
+.list__item--help--middle {
+  padding-top: 15px;
+  padding-bottom: 1px;
+}
+
+.list__item--help--last {
+  padding-top: 20px;
+  padding-bottom: 28px;
 }
 
 .list__icon {
@@ -38,8 +54,12 @@
 }
 
 .list__wrap {
-  margin-bottom: 30px;
-  padding: 40px 25px 40px 25px;
+  margin-bottom: 28px;
+  padding: 48px 25px 1px 25px;
+}
+
+.list__wrap--second {
+  padding-top: 30px;
 }
 
 .list__title {
@@ -49,7 +69,9 @@
 
 .list__title--second {
   text-align: left;
+  margin: 0;
 }
+
 
 .list__number {
   margin-left: 40%;

@@ -42,7 +42,10 @@
   <main class="container">
     <div class="main-banner">
         <img src="img/text-sedona-index.svg" width="281" height="214" alt="логотип седоны текстовый">
-        <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
+        <pictute>
+          <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+          <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
+      </picture>
     </div>
     <section class="about">
       <h1 class="about__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
@@ -75,25 +78,25 @@
           <p class="list__text list__text--second">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
 
-        <li class="list__item list__item--second">
-          <img class="list__icon" src="img/icon-burger.svg" width="35" height="35" alt="Логотип бургер">
-          <h3 class="list__title list__title--second">ЕДА</h3>
-          <p class="list__text list__text--second">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-
-        <li class="list__item list__item--second">
+        <li class="list__item list__item--second list__item--help--middle">
           <img class="list__icon" src="img/icon-gift.svg" width="35" height="35" alt="Логотип подарок">
           <h3 class="list__title list__title--second">СУВЕНИРЫ</h3>
           <p class="list__text list__text--second">Не только китайского, но и местного производства!</p>
         </li>
 
+        <li class="list__item list__item--second list__item--help--last">
+          <img class="list__icon" src="img/icon-burger.svg" width="35" height="35" alt="Логотип бургер">
+          <h3 class="list__title list__title--second">ЕДА</h3>
+          <p class="list__text list__text--second">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+
         <li class="list__item list__item--large">
-          <div class="list__wrap">
+          <div class="list__wrap list__wrap--second">
             <h2 class="list__title">Там есть Мост дьявола</h2>
             <span class="list__number">— №2 —</span>
             <p class="list__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <div class="list__img">
+          <div class="list__img list__img--second">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
@@ -126,7 +129,14 @@
     <section class="promo">
       <h2>Заинтерeсовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button>Найти гостиницу</button>
+      <button class="button">Найти гостиницу</button>
+    </section>
+    <section class="map">
+      <div>
+        <picture>
+          <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+        </picture>
+      </div>
     </section>
   </main>
 

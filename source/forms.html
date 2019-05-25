@@ -73,13 +73,14 @@
 
         <div class="forms__box">
           <h2 class="forms__title">Контактная информация:</h2>
-          <ul class="forms__list">
-            <li class="forms__item">
-              <label class="forms__text forms__text--block" for="number-field">Контактный телефон*:</label>
+          <ul class="forms__list forms__list--contact">
+            <li class="forms__item forms__item--contact">
+              <label class="forms__text--one forms__text forms__text--block" for="number-field">Контактный телефон*:</label>
+              <label class="forms__text--two forms__text forms__text--block" for="number-field">Телефон*:</label>
               <input type="text" name="number" id="number-field" placeholder="Введите телефон">
             </li>
 
-            <li class="forms__item">
+            <li class="forms__item forms__item--contact forms__item--mail">
               <label class="forms__text forms__text--block" for="email-field">Электронная почта*:</label>
               <input type="email" name="email" id="email-field"  placeholder="Введите e-mail">
             </li>
@@ -172,22 +173,22 @@
     </div>
   </footer>
 
-  <div class="container modal-container disable">
-    <section class="modal__error">
+  <div class="container modal-container">
+    <section class="modal__window modal__window-error disable">
       <h2>ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button>OK</button>
     </section>
 
-    <section class="modal__review disable">
+    <section class="modal__window modal__window--review">
       <h2>Ваш отзыв отправлен!</h2>
       <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.
       В ближайшее время мы опубликуем его на сайте.
       </p>
-      <div class="modal__wrap">
-        <button>ЗАКРЫТЬ ОКНО</button>
-      </div>
     </section>
+    <div class="modal__window modal__window--button">
+        <button>ЗАКРЫТЬ ОКНО</button>
+    </div>
   </div>
 
 </body>
