@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -42,7 +41,8 @@
   <main class="container">
     <div class="main-banner">
         <img src="img/text-sedona-index.svg" width="281" height="214" alt="логотип седоны текстовый">
-        <pictute>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
           <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
       </picture>
@@ -90,7 +90,7 @@
           <p class="list__text list__text--second">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
 
-        <li class="list__item list__item--large">
+        <li class="list__item list__item--large list__item--reverse">
           <div class="list__wrap list__wrap--second">
             <h2 class="list__title">Там есть Мост дьявола</h2>
             <span class="list__number">— №2 —</span>
@@ -129,11 +129,14 @@
     <section class="promo">
       <h2>Заинтерeсовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button">Найти гостиницу</button>
+      <button class="button buttin__main--tablet">Найти гостиницу</button>
     </section>
     <section class="map">
-      <div>
+      <div class="map__img">
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <source media="(min-width: 320px)" srcset="img/bg-map-mobile@2x.jpg 2x">
           <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
         </picture>
       </div>
