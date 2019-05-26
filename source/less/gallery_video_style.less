@@ -1,10 +1,15 @@
 .gallery-video {
   background-color: #ffffff;
-  padding: 40px 40px;
+  padding-bottom: 105px;
+}
+
+.gallery-video__paragraph {
+  padding: 23px 40px 20px 40px;
   text-align: center;
 
   h2 {
     font-size: 18px;
+    margin-bottom: 31px;
   }
 
   p {
@@ -13,14 +18,168 @@
     color: #333333;
   }
 }
+.gallery-video__box {
+  position: relative;
+}
+
+.gallery-video__player {
+  position: absolute;
+  bottom: 4px;
+  left: 20px;
+  width: 280px;
+  height: 45px;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.gallery-video__line {
+  position: absolute;
+  bottom: 20px;
+  left: 21px;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255,255,255, 0.2);
+  // opacity: 0.2;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -3px;
+    left: 37px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.gallery-video__controls {
+  width: 280px;
+  height: 66px;
+  position: absolute;
+  left: 20px;
+  bottom: -62px;
+  background-color: #f2f2f2;
+}
+
+.gallery-video__btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 18px;
+
+  &:nth-child(1) {
+    left: 18px;
+  }
+
+  &:nth-child(2) {
+    right: 67px;
+  }
+
+  &:nth-child(3) {
+    right: 16px;
+  }
+
+  svg {
+    fill: #454545;
+  }
+}
 
 
 @media (min-width: @tablet) {
   .gallery-video {
-    padding: 40px 160px;
+    padding: 40px 60px;
+  }
 
+  .gallery-video__paragraph {
+    padding: 0 40px 57px 40px;;
     h2 {
       font-size: 30px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .gallery-video__box {
+    margin-bottom: 3px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .gallery-video__player {
+    width: 100%;
+    height: 93px;
+    left: 0;
+    bottom: 2px;
+  }
+
+  .gallery-video__line {
+    width: 389px;
+    bottom: 45px;
+    left: 93px;
+    z-index: 1000;
+
+    &::before {
+      left: 112px;
+    }
+  }
+
+  .gallery-video__controls {
+    width: 100%;
+    left: 0;
+    bottom: 15px;
+    background-color: transparent;
+  }
+
+  .gallery-video__btn {
+    &:nth-child(1) {
+      left: 28px;
+    }
+
+    &:nth-child(2) {
+      right: 85px;
+    }
+    &:nth-child(3) {
+      right: 34px;
+    }
+
+    svg {
+      fill: #ffffff;
     }
   }
 }
+
+
+
+@media (min-width: @desktop) {
+  .gallery-video {
+    padding: 43px 200px;
+  }
+
+  .gallery-video__box {
+    margin-bottom: 40px;
+  }
+
+  .gallery-video__paragraph {
+    h2 {
+      margin-bottom: 28px;
+
+    }
+    p {
+      margin-left: 150px;
+      display: block;
+      width: 415px;
+    }
+  }
+
+  .gallery-video__player {
+    bottom: 5px;
+  }
+
+  .gallery-video__controls {
+    bottom: 19px;
+  }
+}
+
+
+
