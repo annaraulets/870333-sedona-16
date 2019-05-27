@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,8 +11,13 @@
   <header class="container">
     <nav class="main-menu">
       <button class="main-menu__toggle">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/></svg>
-      <span class="visually-hidden">Открыть меню</span></button>
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/></svg>
+      <span class="visually-hidden">Закрыть меню</span></button>
+      <button class="main-menu__toggle main-menu__toggle--burger">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve"><g><rect width="22.928" height="3.964"/><rect y="9.009" width="22.928" height="3.964"/><rect y="18.018" width="22.928" height="3.964"/></g>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="menu">
         <li class="menu-item">
           <a href="index.html">Главная</a>
@@ -28,7 +32,7 @@
           <a href="#">HTML academy</a>
         </li>
       </ul>
-        <a class="main-menu__logo" href="#">
+        <a class="main-menu__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -41,7 +45,11 @@
   <main class="container">
     <div class="main-banner main-banner-gallery">
       <img src="img/text-sedona.svg" width="229" height="39" alt="логотип седоны галлерея">
-      <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
+      <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+          <img class="triagle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="декоративный элемент">
+      </picture>
     </div>
     <section class="feedback">
       <h2>Оставьте свой отзыв</h2>
@@ -75,9 +83,8 @@
           <h2 class="forms__title">Контактная информация:</h2>
           <ul class="forms__list forms__list--contact">
             <li class="forms__item forms__item--contact">
-              <label class="forms__text--one forms__text forms__text--block" for="number-field">Контактный телефон*:</label>
-              <label class="forms__text--two forms__text forms__text--block" for="number-field">Телефон*:</label>
-              <input type="text" name="number" id="number-field" placeholder="Введите телефон">
+              <label class="forms__text--one forms__text forms__text--block" for="number-field"><span class="text-nodisplay">Контактный</span> телефон*:</label>
+              <input type="tel" name="number" id="number-field" placeholder="Введите телефон">
             </li>
 
             <li class="forms__item forms__item--contact forms__item--mail">
@@ -110,22 +117,22 @@
         <div class="forms__box">
           <h2 class="forms__title">Посещенные достопримечательности:</h2>
           <ul class="forms__list forms__list--tablet">
-            <li class="forms__item forms__item--bigspace">
+            <li class="forms__item forms__item--bigspace forms__item--bigspace-chekbox">
               <input class="visually-hidden forms__checkbox" type="checkbox" name="bridge" id="bridge-field" checked>
               <label class="forms__text forms__text--bold" for="bridge-field">Мост Дьявола</label>
             </li>
 
-            <li class="forms__item forms__item--bigspace">
+            <li class="forms__item forms__item--bigspace forms__item--bigspace-chekbox">
               <input class="visually-hidden forms__checkbox" type="checkbox" name="mount" id="mount-field" checked>
               <label class="forms__text forms__text--bold" for="mount-field">Гора-Колокол</label>
             </li>
 
-            <li class="forms__item forms__item--bigspace">
+            <li class="forms__item forms__item--bigspace forms__item--bigspace-chekbox">
               <input class="visually-hidden forms__checkbox" type="checkbox" name="park" id="park-field" checked>
               <label class="forms__text forms__text--bold" for="park-field">Слайд-парк</label>
             </li>
 
-            <li class="forms__item forms__item--bigspace">
+            <li class="forms__item forms__item--bigspace forms__item--bigspace-chekbox">
               <input class="visually-hidden forms__checkbox" type="checkbox" name="rock" id="rock-field">
               <label class="forms__text forms__text--bold" for="rock-field">Красные скалы</label>
             </li>
@@ -133,9 +140,9 @@
         </div>
 
         <div class="forms__box">
-          <h2 class="forms__title">Опишите свои эмоции:</h2>
+          <h2 class="forms__title forms__title--textarea">Опишите свои эмоции:</h2>
           <textarea class="forms__area" placeholder="Опишите подробно все свои восторги "></textarea>
-          <button class="forms__button" type="submit">Отправить отзыв</button>
+          <button class="button button__forms button__forms--tablet" type="submit">Отправить отзыв</button>
           <span class="forms__note-field">* — обязательные поля</span>
         </div>
       </form>
@@ -174,7 +181,7 @@
   </footer>
 
   <div class="container modal-container disable">
-    <section class="modal__window modal__window-error disable">
+    <section class="modal__window modal__window--error disable">
       <h2>ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button>OK</button>
@@ -186,7 +193,7 @@
       В ближайшее время мы опубликуем его на сайте.
       </p>
     </section>
-    <div class="modal__window modal__window--button">
+    <div class="button button__modal">
         <button>ЗАКРЫТЬ ОКНО</button>
     </div>
   </div>

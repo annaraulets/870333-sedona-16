@@ -5,10 +5,10 @@
 .forms__box {
   border: none;
   border-bottom: 1px solid #333333;
-  padding: 25px 20px;
+  padding: 20px 20px 3px 20px;;
 
   textarea {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
@@ -38,6 +38,9 @@
 .forms__item {
   position: relative;
   margin-bottom: 20px;
+  &--mail {
+    margin-bottom: 24px;
+  }
 
   &--stretch {
     display: flex;
@@ -49,7 +52,15 @@
   }
 
   &--bigspace {
-    margin-bottom: 50px;
+    margin-bottom: 39px;
+
+    &:nth-child(1) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 41px;
+    }
   }
 
   &--contact::before {
@@ -70,6 +81,17 @@
   }
 }
 
+.forms__item--bigspace-chekbox {
+  &:nth-child(1) {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  &:nth-child(3) {
+    margin: 50px 0;
+  }
+}
+
 input::placeholder {
   color: #000000;
 }
@@ -85,7 +107,11 @@ textarea::placeholder {
   line-height: 26px;
   font-weight: bold;
 
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
+
+  &--textarea {
+    margin: 0 0 15px 0;
+  }
 }
 
 .forms__text {
@@ -93,13 +119,19 @@ textarea::placeholder {
   color: #333333;
   margin-right: 15px;
 
+  &--one {
+    padding-left: 22px;
+    padding-top: 5px;
+  }
+
   &--first {
     margin-top: 20px;
   }
 
   &--block {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding-left: 22px;
   }
 }
 
@@ -117,10 +149,10 @@ textarea::placeholder {
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: -8px;
-    width: 45px;
-    height: 45px;
+    left: 1px;
+    top: -7px;
+    width: 53px;
+    height: 53px;
     border-radius: 5px;
     background-color: #f2f2f2;
   }
@@ -133,8 +165,8 @@ textarea::placeholder {
 .forms__checkbox:checked + .forms__text--bold::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 12px;
+  top: 11px;
+  left: 16px;
   width: 24px;
   height: 16px;
   background-image: url("../img/icon-tick.svg");
@@ -145,31 +177,24 @@ textarea::placeholder {
 .forms__radio:checked + .forms__text--bold::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 12px;
-  width: 16px;
-  height: 16px;
+  top: 9px;
+  left: 17px;
+  width: 18px;
+  height: 18px;
   border: solid 2px #333333;
   border-radius: 50%;
   background-color: #333333;
 }
 
 .forms__area {
-  padding: 20px 20px;
-  width: 235px;
-  height: 120px;
+  padding: 17px 20px;
+  width: 238px;
+  height: 126px;
   resize: none;
   background-color: #f2f2f2;
   border: none;
-}
-
-.forms__button {
-  background-color: #81b3d2;
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: bold;
-  padding: 20px 47px;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .forms__note-field {
@@ -182,16 +207,6 @@ textarea::placeholder {
 
 
 @media (min-width: @tablet) {
-  .feedback {
-    border: none;
-    padding: 70px 160px;
-
-    h2 {
-      font-size: 30px;
-      margin: 0;
-    }
-  }
-
   .forms-container {
     padding: 0 60px;
   }
@@ -203,31 +218,62 @@ textarea::placeholder {
 
   .forms__box {
     padding: 0;
-    width: 40%;
+    width: 42%;
     border: none;
 
     h2 {
       font-size: 21px;
     }
+
+    textarea {
+      margin-bottom: 55px;
+    }
+  }
+
+  .forms__box:nth-child(1) {
+    h2 {
+      text-align: start;
+      margin-bottom: 60px;
+    }
   }
 
   .forms__box:nth-child(2) {
     width: 100%;
-    margin: 50px 0;
+    margin: 47px 0 24px 0;
+
+    h2 {
+      margin-bottom: 25px;
+    }
   }
 
   .forms__box:nth-child(3) {
     order: -1;
     width: 50%;
     margin-right: 50px;
+
+    h2 {
+      text-align: start;
+      margin-bottom: 66px;
+    }
   }
 
   .forms__box:nth-child(4) {
     width: 100%;
+    margin-bottom: 31px;
+
+    h2 {
+      width: 250px;
+      margin: 0 188px 50px 188px;
+    }
   }
 
   .forms__box:last-child {
     width: 100%;
+    margin-bottom: 28px;
+
+    h2 {
+      margin-bottom: 55px;
+    }
   }
 
   .forms__list input {
@@ -239,6 +285,14 @@ textarea::placeholder {
   .forms__item {
     display: flex;
     flex-direction: column;
+
+    &--bigspace {
+      margin-bottom: 48px;
+    }
+
+    &--contact {
+      margin-bottom: 30px;
+    }
   }
 
   .forms__item--stretch {
@@ -248,16 +302,19 @@ textarea::placeholder {
   .forms__list--tablet {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-  }
+    justify-content: center;
+    margin: 0;
+    padding-left: 63px;
 
-  .forms__list--tablet .forms__item--bigspace:first-child {
-    margin-right: 10%;
-  }
+    .forms__item--bigspace {
+      margin: 0 58px 57px 0;
+      padding: 0;
+      box-sizing: border-box;
 
-  .forms__list--tablet .forms__item--bigspace:nth-child(3) {
-    margin-right: 14%;
+      &:last-child {
+        padding-left: 20px;
+      }
+    }
   }
 
   .forms__area {
@@ -267,9 +324,16 @@ textarea::placeholder {
   .forms__note-field {
     display: inline-block;
     font-size: 14px;
-    margin-left: 180px;
+    margin-left: 157px;
   }
 }
+
+
+
+
+
+
+
 
 @media (min-width: @desktop) {
   .forms-container {
@@ -331,11 +395,7 @@ textarea::placeholder {
     margin-right: 50px;
   }
 
-  .forms__text--one {
+  .text-nodisplay {
     display: none;
-  }
-
-  .forms__text--two {
-    display: block;
   }
 }
