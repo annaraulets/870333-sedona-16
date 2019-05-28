@@ -8,6 +8,16 @@
   list-style: none;
   padding: 23px 20px 21px 20px;
   border-bottom: 1px solid #cfd6d9;
+
+  &:nth-child(2) {
+    padding-top: 21px;
+    padding-bottom: 19px;
+  }
+
+  &:nth-child(4) {
+    padding-top: 21px;
+    padding-bottom: 18px;
+  }
 }
 
 .gallery-list__item img {
@@ -66,6 +76,11 @@
     border: none;
     box-sizing: border-box;
     width: 50%;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+    padding: 0;
+    }
 
     img {
       width: 100%;
