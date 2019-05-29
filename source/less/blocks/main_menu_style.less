@@ -14,7 +14,7 @@
   fill: #ffffff;
 
   &--burger {
-    display: block;
+    // display: block;
     top: 238px;
     fill: #81b3d2;
   }
@@ -36,9 +36,34 @@
   border-bottom: 1px solid #6c7a86;
   text-align: center;
 
+  .selected {
+   color: #766357;
+
+   &:hover {
+    color: #604e43;
+   }
+
+   &:active {
+    color: rgba(118, 99, 87, 0.3);
+   }
+  }
+
   a {
+    cursor: pointer;
     color: #ffffff;
     text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  a:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -78,6 +103,18 @@
 
     a {
       color: #000000;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    a:hover {
+      color: #81b3d2;
+    }
+
+    a:active {
+      color: #766357;
     }
   }
 

@@ -27,7 +27,7 @@
           <a href="gallery.html">Фото и видео</a>
         </li>
         <li class="menu-item">
-          <a>Форма отзыва</a>
+          <a class="selected">Форма отзыва</a>
         </li>
         <li class="menu-item">
           <a href="#">HTML academy</a>
@@ -65,17 +65,17 @@
           <ul class="forms__list forms__list--user">
             <li class="forms__item forms__item--stretch">
               <label class="forms__text forms__text--first" for="name-field">Имя*:</label>
-              <input type="text" name="user-name" id="name-field" placeholder="Петр">
+              <input type="text" name="user-name" id="name-field" placeholder="Петр" required>
             </li>
 
             <li class="forms__item forms__item--stretch">
               <label class="forms__text forms__text--first" for="surname-field">Фамилия*:</label>
-              <input type="text" name="user-surname" id="surname-field" placeholder="Иванов">
+              <input type="text" name="user-surname" id="surname-field" placeholder="Иванов" required>
             </li>
 
             <li class="forms__item forms__item--stretch">
               <label class="forms__text forms__text--first" for="fathername-field">Отчество:</label>
-              <input type="text" name="user-fathername" id="fathername-field" placeholder="Александрович">
+              <input type="text" name="user-fathername" id="fathername-field" placeholder="Александрович" required>
             </li>
           </ul>
         </div>
@@ -85,12 +85,12 @@
           <ul class="forms__list forms__list--contact">
             <li class="forms__item forms__item--contact">
               <label class="forms__text--one forms__text forms__text--block" for="number-field"><span class="text-nodisplay">Контактный</span> телефон*:</label>
-              <input type="tel" name="number" id="number-field" placeholder="Введите телефон">
+              <input type="tel" name="number" id="number-field" placeholder="Введите телефон" required>
             </li>
 
-            <li class="forms__item forms__item--contact">
+            <li class="forms__item forms__item--contact forms__item--mail">
               <label class="forms__text forms__text--block" for="email-field">Электронная почта*:</label>
-              <input type="email" name="email" id="email-field"  placeholder="Введите e-mail">
+              <input type="email" name="email" id="email-field"  placeholder="Введите e-mail" required>
             </li>
           </ul>
         </div>

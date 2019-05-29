@@ -82,6 +82,15 @@
   }
 }
 
+.forms__item--stretch input:hover {
+  background-color: #e5e5e5;
+}
+
+.forms__item--stretch input:focus{
+  background-color: transparent;
+  border: 3px solid #e5e5e5;
+}
+
 .forms__item--bigspace-chekbox {
   &:nth-child(1) {
     margin-top: 25px;
@@ -157,6 +166,14 @@ textarea::placeholder {
     border-radius: 5px;
     background-color: #f2f2f2;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
 }
 
 .forms__text--radio::before {
@@ -185,6 +202,11 @@ textarea::placeholder {
   border: solid 2px #333333;
   border-radius: 50%;
   background-color: #333333;
+}
+
+.forms__radio:focus + label,
+.forms__checkbox:focus + label{
+ outline: 1px solid blue;
 }
 
 .forms__area {
