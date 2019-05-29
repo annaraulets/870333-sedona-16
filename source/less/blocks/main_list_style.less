@@ -10,6 +10,7 @@
 }
 
 .list__item {
+  position: relative;
   background-color: #cfd6d9;
   margin: 0;
   padding: 14px 35px;
@@ -38,23 +39,30 @@
   box-sizing: border-box;
 }
 
-.list__item--help--middle {
+.list__item--help-middle {
   padding-top: 19px;
   padding-bottom: 1px;
 }
 
-.list__item--help--last {
+.list__item--help-last {
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 20px;
 }
 
 .list__icon {
   position: absolute;
   left: 22px;
+  top: 22px;
+}
+.list__item--help-middle .list__icon{
+  top: -4px;
+}
+.list__item--help-last .list__icon{
+  top: 6px;
 }
 
 .list__wrap {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   padding: 48px 25px 1px 25px;
 }
 
@@ -74,7 +82,9 @@
 
 
 .list__number {
-  margin-left: 40%;
+  margin: 0 auto;
+  display: table;
+  /*margin-left: 40%;*/
 }
 
 .list__text {
@@ -115,10 +125,6 @@
     text-align: center;
   }
 
-  .list__number {
-    margin-left: 34%;
-  }
-
   .list__text {
     margin-top: 23px;
     text-align: center;
@@ -126,8 +132,13 @@
 
   .list__title--second {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 28px;
     margin-bottom: 23px;
+  }
+
+  .list__title--small{
+    padding: 0 10px;
+    margin-bottom: 7px;
   }
 
   .list__text--second {
@@ -147,9 +158,16 @@
 
 
   .list__item--small {
-    padding: 40px 50px 30px 50px;
+    padding: 40px 40px 30px;
     width: 33.333333%;
     box-sizing: border-box;
+
+    .list__title{
+      padding: 0 10px;
+    }
+    .list__text{
+      margin-top: 18px;
+    }
   }
 
   .list__wrap {
@@ -173,7 +191,7 @@
     min-width: 150px;
     width: 33.333333%;
     box-sizing: border-box;
-    padding: 150px 40px 62px 50px;
+    padding: 55px 40px 62px 50px;
 
     text-align: center;
   }
@@ -181,8 +199,10 @@
 
 
   .list__icon {
-    left: 35%;
-    top: 60px;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
     width: 75px;
     height: 75px;
   }
@@ -197,7 +217,7 @@
       padding: 0 30px 0 22px;
 
       &--small {
-        padding: 0 30px 0 22px;
+        padding: 0 55px 0 22px;
       }
     }
 
@@ -207,7 +227,7 @@
   }
 
   .list__item--second {
-    padding: 150px 40px 80px 50px;
+    padding: 55px 40px 80px 50px;
     justify-content: space-between;
   }
 
@@ -215,12 +235,12 @@
     width: 300px;
   }
 
-  .list__icon {
-    left: 40%;
+  .list__item--reverse .list__text{
+    padding: 0 25px;
   }
 
   .list__item--small {
-    padding: 42px 58px 48px 71px;
+    padding: 37px 58px 48px 71px;
 
     .list__title {
       line-height: 26px;
