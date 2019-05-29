@@ -101,7 +101,6 @@
 
 .list__item--small {
   background-color: #eeeeee;
-  border-bottom: 1px solid #6c7a86;
 }
 
 @media (min-width: @tablet) {
@@ -213,14 +212,13 @@
 
 @media (min-width: @desktop) {
   .list__wrap {
-    padding: 47px 60px 60px 70px;
+    padding: 47px 65px 60px 70px;
 
     .list__title {
-      // width: 100px;
       padding: 0 30px 0 22px;
 
       &--small {
-        padding: 0 55px 0 22px;
+        padding: 0 10px 0;
       }
     }
 
@@ -230,8 +228,20 @@
   }
 
   .list__item--second {
-    padding: 55px 40px 80px 50px;
+    padding: 55px 50px 80px;
     justify-content: space-between;
+  }
+
+  .list__title--second-title{
+    margin-top: 10px;
+  }
+
+  .list__item--small{
+    padding: 40px 60px 52px;
+  }
+
+  .list__item--small .list__text{
+    margin-top: 20px;
   }
 
   .list__text--second {
@@ -242,8 +252,11 @@
     padding: 0 25px;
   }
 
+  .list__title--second{
+
+  }
+
   .list__item--small {
-    padding: 37px 58px 48px 71px;
 
     .list__title {
       line-height: 26px;
