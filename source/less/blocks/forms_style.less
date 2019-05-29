@@ -5,7 +5,7 @@
 .forms__box {
   border: none;
   border-bottom: 1px solid #333333;
-  padding: 21px 20px 3px 20px;;
+  padding: 21px 20px 3px 20px;
 
   textarea {
     margin-bottom: 48px;
@@ -38,6 +38,7 @@
 .forms__item {
   position: relative;
   margin-bottom: 20px;
+
   &--mail {
     margin-bottom: 24px;
   }
@@ -201,7 +202,7 @@ textarea::placeholder {
   display: none;
 }
 
-.forms__text--two{
+.forms__text--two {
   display: none;
 }
 
@@ -319,7 +320,6 @@ textarea::placeholder {
     .forms__item--bigspace-chekbox:nth-child(3) .forms__text {
       margin-left: 14px;
     }
-
   }
 
   .forms__area {
@@ -334,12 +334,6 @@ textarea::placeholder {
 }
 
 
-
-
-
-
-
-
 @media (min-width: @desktop) {
   .forms-container {
     padding: 0 120px;
@@ -348,12 +342,14 @@ textarea::placeholder {
   .forms__box {
     width: 41%;
   }
+
   .forms__box:first-child {
     h2 {
       text-align: left;
       margin-bottom: 60px;
     }
   }
+
   .forms__box:nth-child(2) {
     margin: 40px 0 25px 0;
 
@@ -364,6 +360,7 @@ textarea::placeholder {
 
   .forms__box:nth-child(3) {
     margin-right: 80px;
+
     h2 {
       margin-left: -48px;
       margin-bottom: 45px;
@@ -379,6 +376,7 @@ textarea::placeholder {
 
   .forms__box:nth-child(4) {
     margin-bottom: 83px;
+
     h2 {
       margin: 0 250px 56px 353px;
     }
@@ -392,7 +390,7 @@ textarea::placeholder {
     margin-bottom: 52px;
   }
 
-  .forms__item--stretch input{
+  .forms__item--stretch input {
     width: 350px;
   }
 
@@ -401,25 +399,21 @@ textarea::placeholder {
     flex-wrap: nowrap;
     padding: 0;
 
-    .forms__item--bigspace-chekbox{
+    .forms__item--bigspace-chekbox {
       margin: 0;
 
       &:nth-child(1) {
-      margin-left: -4px;
-      margin-right: 15px;
+        margin-left: -4px;
+        margin-right: 15px;
       }
-      &:nth-child(3) {
-      margin-right: -13px;
-    }
-    }
-  }
 
-  .forms__list--user {
-    // margin-left: 50px;
+      &:nth-child(3) {
+        margin-right: -13px;
+      }
+    }
   }
 
   .forms__text--bold {
-    // font-size: 16px;
     line-height: 26px;
     padding: 0 0 0 79px;
 
@@ -447,9 +441,10 @@ textarea::placeholder {
     width: 275px;
   }
 
-  .forms__item--contact{
+  .forms__item--contact {
     display: flex;
     flex-direction: row;
+
     &:first-child {
       margin-right: 82px;
     }
