@@ -195,7 +195,7 @@
     min-width: 150px;
     width: 33.333333%;
     box-sizing: border-box;
-    padding: 55px 40px 62px 50px;
+    padding: 56px 40px 59px;
 
     text-align: center;
   }
@@ -207,6 +207,19 @@
     left: 0;
     width: 75px;
     height: 75px;
+  }
+
+  .list__text--one {
+    margin: -3px 10px 0 10px;
+  }
+
+  .list__text--two {
+    margin: -2px 0 0 0;
+  }
+
+  .list__text--three {
+    margin: -3px 0 0 0;
+    padding: 0 10px;
   }
 }
 
@@ -257,6 +270,109 @@
       text-align: center;
       width: 158px;
       margin-left: 50px;
+    }
+  }
+}
+
+
+.list__item--one {
+  img {
+    top: 26px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.list__item--two {
+  padding-top: 10px;
+}
+
+.list__item--three {
+  padding-bottom: 23px;
+}
+
+@media (min-width: @tablet) {
+  .list__item--one {
+    img {
+      top: 0;
+    }
+
+    p {
+      margin-top: -3px;
+    }
+  }
+
+  .list__item--two {
+    padding-top: 56px;
+  }
+
+  .list__item--three {
+    padding-bottom: 56px;
+  }
+
+  .list__item--third {
+    p {
+      padding: 3px 15px 0;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .list__item--one {
+    p {
+      margin-top: -1px;
+      margin-left: -1px;
+    }
+  }
+
+  .list__item--two {
+    padding-top: 58px;
+
+    p {
+      margin: -3px auto 0;
+      width: 195px;
+    }
+  }
+
+  .list__item--three {
+    .list__title {
+      margin-top: 28px;
+    }
+
+    p {
+      margin: 0 0 24px -12px;
+    }
+  }
+
+  .list__text--first {
+    margin: 20px 0 0 -6px;
+  }
+
+  .list__title--devil {
+    h2.list__title {
+      margin-top: 6px;
+      padding: 0 59px 0 56px;
+    }
+
+    .list__text {
+      padding-top: 6px;
+    }
+  }
+
+  .list__item--square {
+    padding: 40px 50px 52px;
+
+    .list__title {
+      padding: 0 20px;
+    }
+  }
+
+  .list__item--third {
+    p {
+      padding: 0;
+      margin: 22px 2px 0 0;
     }
   }
 }
